@@ -30,6 +30,9 @@ Python の Web フレームワーク **FastAPI** と、テンプレートエン�
 | 第5章 | [SQLite の基本](docs/05_SQLiteの基本.md) | `step05_sqlite/` | Python 単体で SQLite を読み書き |
 | 第6章 | [ToDo アプリを完成させる](docs/06_ToDoアプリを完成させる.md) | `step06_todo_app/` | ここまでを組み合わせて完成 |
 | 付録 | [次のステップ・困ったとき](docs/付録.md) | — | よくあるエラーと発展学習 |
+| 付録 | [Python のインストール](docs/付録_Pythonのインストール.md) | — | Python がまだ入っていない人向け |
+
+> Python がまだ入っていない場合は、先に [付録 Python のインストール](docs/付録_Pythonのインストール.md) を済ませてください。
 
 ## すぐに完成版を動かしたい場合
 
