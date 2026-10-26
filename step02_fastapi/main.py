@@ -1,5 +1,5 @@
 # 第2章: FastAPI はじめの一歩
-# 実行方法（step02_fastapi フォルダで）:  uvicorn main:app --reload
+# 実行方法（C:\FastApiStudy\step02_fastapi で）:  uvicorn main:app --reload
 # ブラウザで http://127.0.0.1:8000 を開く
 
 from fastapi import FastAPI

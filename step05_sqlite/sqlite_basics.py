@@ -1,5 +1,5 @@
 # 第5章: Python から SQLite を使う（Web なしで単体で動かす）
-# 実行方法:  python sqlite_basics.py
+# 実行方法（C:FastApiStudystep05_sqlite で）:  python sqlite_basics.py
 # 同じフォルダに sample.db というファイルが作られる
 
 import sqlite3

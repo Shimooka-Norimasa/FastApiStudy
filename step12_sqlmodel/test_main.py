@@ -1,5 +1,5 @@
 # 第11章: テスト
-# 実行方法（step11_test フォルダで）:  pytest -v
+# 実行方法（テストのある章のフォルダに移動してから）:  pytest -v
 #
 # pytest は「test_ で始まるファイル」の「test_ で始まる関数」を自動で探して実行する
 # 引数に client と書くと、conftest.py の client フィクスチャが渡される

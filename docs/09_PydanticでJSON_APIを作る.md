@@ -262,7 +262,7 @@ async def http_exception_handler(request: Request, exc: StarletteHTTPException):
 ## 9-8. 動かしてみる
 
 ```powershell
-cd step09_json_api
+cd C:\FastApiStudy\step09_json_api
 uvicorn main:app --reload
 ```
 

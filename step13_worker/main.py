@@ -1,5 +1,5 @@
 # 第13章: ワーカーで時間のかかる処理を行う
-# 実行方法（step13_worker フォルダで）:
+# 実行方法（C:\FastApiStudy\step13_worker で）:
 #   ターミナル1:  uvicorn main:app --reload   … Web アプリ
 #   ターミナル2:  python worker.py            … ワーカー
 #

@@ -183,7 +183,7 @@ POST /delete/3
 ## 8-6. 動かしてみる
 
 ```powershell
-cd step08_depends
+cd C:\FastApiStudy\step08_depends
 uvicorn main:app --reload
 ```
 

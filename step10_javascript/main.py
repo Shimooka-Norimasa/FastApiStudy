@@ -1,5 +1,5 @@
 # 第10章: JavaScript から JSON API を使う
-# 実行方法（step10_javascript フォルダで）:  uvicorn main:app --reload
+# 実行方法（C:\FastApiStudy\step10_javascript で）:  uvicorn main:app --reload
 #
 # 第9章との違い:
 #   画面の組み立てはブラウザの JavaScript（static/app.js）が担当する。

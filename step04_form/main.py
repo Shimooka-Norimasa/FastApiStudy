@@ -1,5 +1,5 @@
 # 第4章: フォームでデータを送る（データはメモリ上のリストに保存）
-# 実行方法（step04_form フォルダで）:  uvicorn main:app --reload
+# 実行方法（C:\FastApiStudy\step04_form で）:  uvicorn main:app --reload
 
 from fastapi import FastAPI, Form, Request
 from fastapi.responses import HTMLResponse, RedirectResponse

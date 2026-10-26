@@ -1,5 +1,5 @@
 # 第3章: Jinja2 で HTML を返す
-# 実行方法（step03_jinja2 フォルダで）:  uvicorn main:app --reload
+# 実行方法（C:\FastApiStudy\step03_jinja2 で）:  uvicorn main:app --reload
 
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse

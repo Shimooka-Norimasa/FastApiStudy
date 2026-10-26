@@ -1,5 +1,5 @@
 # 第13章: ワーカーのテスト
-# 実行方法（step13_worker フォルダで）:  pytest -v
+# 実行方法（C:\FastApiStudy\step13_worker で）:  pytest -v
 #
 # テストの中では worker.py をずっと動かすのではなく、
 # process_one_job() を呼んで「仕事を1件だけ処理する」ところを確かめる

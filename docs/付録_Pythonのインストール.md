@@ -131,8 +131,11 @@ Windows に最初から入っている「アプリ実行エイリアス」の設
 
 ```powershell
 py install 3.13
+cd C:\FastApiStudy
 py -V:3.13 -m venv .venv
 ```
+
+すでに `.venv` フォルダを作っていた場合は、先に削除してから実行してください。
 
 この教材は Python 3.12 で動作確認しています。**3.10 以上** を使ってください。
 

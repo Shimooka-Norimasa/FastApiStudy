@@ -68,7 +68,7 @@ def index():
 ## 2-4. 起動してみる
 
 ```powershell
-cd step02_fastapi
+cd C:\FastApiStudy\step02_fastapi
 uvicorn main:app --reload
 ```
 

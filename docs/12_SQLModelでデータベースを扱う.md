@@ -48,6 +48,7 @@ Python で有名な ORM は **SQLAlchemy** です。
 ## 12-2. 準備
 
 ```powershell
+cd C:\FastApiStudy
 pip install sqlmodel
 ```
 
@@ -232,7 +233,7 @@ def client(tmp_path, monkeypatch):
 **`test_main.py` は第11章から1行も変えていません。** 実行してみましょう。
 
 ```powershell
-cd step12_sqlmodel
+cd C:\FastApiStudy\step12_sqlmodel
 pytest -v
 ```
 

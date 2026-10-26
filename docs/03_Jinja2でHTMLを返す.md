@@ -183,7 +183,7 @@ Jinja2 の書き方は3種類だけ覚えれば十分です。
 ## 3-6. 動かしてみる
 
 ```powershell
-cd step03_jinja2
+cd C:\FastApiStudy\step03_jinja2
 uvicorn main:app --reload
 ```
 

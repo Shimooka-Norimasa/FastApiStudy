@@ -45,7 +45,7 @@ users テーブル
 ## 5-2. 動かしてみる
 
 ```powershell
-cd step05_sqlite
+cd C:\FastApiStudy\step05_sqlite
 python sqlite_basics.py
 ```
 

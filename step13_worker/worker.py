@@ -1,5 +1,5 @@
 # 第13章: 自作ワーカー
-# 実行方法（step13_worker フォルダで、uvicorn とは別のターミナルで）:  python worker.py
+# 実行方法（C:\FastApiStudy\step13_worker で、uvicorn とは別のターミナルで）:  python worker.py
 # 止めるときは Ctrl + C
 #
 # やっていること:

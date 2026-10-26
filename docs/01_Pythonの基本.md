@@ -17,7 +17,7 @@
 ## 1-1. 動かしてみる
 
 ```powershell
-cd step01_python
+cd C:\FastApiStudy\step01_python
 python basics.py
 ```
 

@@ -59,13 +59,18 @@ Python の Web フレームワーク **FastAPI** と、テンプレートエン�
 
 > Python がまだ入っていない場合は、先に [付録 Python のインストール](docs/付録_Pythonのインストール.md) を済ませてください。
 
+## 教材の置き場所
+
+この教材は **`C:\FastApiStudy`** に置いて使う前提で書かれています（置き方は [第0章 準備](docs/00_準備.md) を参照）。
+
 ## すぐに完成版を動かしたい場合
 
 ```powershell
+cd C:\FastApiStudy
 python -m venv .venv
-.venv\Scripts\activate
+C:\FastApiStudy\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-cd step06_todo_app
+cd C:\FastApiStudy\step06_todo_app
 uvicorn main:app --reload
 ```
 

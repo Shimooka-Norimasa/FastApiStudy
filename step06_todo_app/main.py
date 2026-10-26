@@ -1,5 +1,5 @@
 # 第6章: FastAPI + Jinja2 + SQLite で作る ToDo アプリ
-# 実行方法（step06_todo_app フォルダで）:  uvicorn main:app --reload
+# 実行方法（C:\FastApiStudy\step06_todo_app で）:  uvicorn main:app --reload
 
 from contextlib import asynccontextmanager
 

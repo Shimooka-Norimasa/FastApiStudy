@@ -230,7 +230,7 @@ loadTodos();                              // 最初の一覧表示
 ## 10-6. 動かしてみる
 
 ```powershell
-cd step10_javascript
+cd C:\FastApiStudy\step10_javascript
 uvicorn main:app --reload
 ```
 

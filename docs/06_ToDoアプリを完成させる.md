@@ -268,7 +268,7 @@ def delete(todo_id: int):
 ## 6-7. 動かしてみる
 
 ```powershell
-cd step06_todo_app
+cd C:\FastApiStudy\step06_todo_app
 uvicorn main:app --reload
 ```
 

@@ -1,5 +1,5 @@
 # 第8章: Depends（依存性注入）でデータベース接続を受け取る
-# 実行方法（step08_depends フォルダで）:  uvicorn main:app --reload
+# 実行方法（C:\FastApiStudy\step08_depends で）:  uvicorn main:app --reload
 
 import sqlite3
 from contextlib import asynccontextmanager

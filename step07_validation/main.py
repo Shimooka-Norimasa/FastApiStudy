@@ -1,5 +1,5 @@
 # 第7章: 入力チェックとエラー表示
-# 実行方法（step07_validation フォルダで）:  uvicorn main:app --reload
+# 実行方法（C:\FastApiStudy\step07_validation で）:  uvicorn main:app --reload
 
 from contextlib import asynccontextmanager
 

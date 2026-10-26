@@ -1,5 +1,5 @@
 # 第11章: テストを書く（このファイルは第10章から変更なし。テストは test_main.py と conftest.py）
-# 実行方法（step11_test フォルダで）:  uvicorn main:app --reload
+# 実行方法（C:\FastApiStudy\step11_test で）:  uvicorn main:app --reload
 #
 # 第9章との違い:
 #   画面の組み立てはブラウザの JavaScript（static/app.js）が担当する。

@@ -1,5 +1,5 @@
 # 第9章: Pydantic で JSON API を作る
-# 実行方法（step09_json_api フォルダで）:  uvicorn main:app --reload
+# 実行方法（C:\FastApiStudy\step09_json_api で）:  uvicorn main:app --reload
 # HTML 画面: http://127.0.0.1:8000   API の確認: http://127.0.0.1:8000/docs
 
 from contextlib import asynccontextmanager
