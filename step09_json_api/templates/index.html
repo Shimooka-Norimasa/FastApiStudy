@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>ToDo リスト</h1>
+
+    {# error が渡されたときだけメッセージを表示する #}
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {# value="{{ title }}" で、エラー時に入力していた文字を残す（未定義なら空になる） #}
+    <form action="/add" method="post" class="add-form">
+        <input type="text" name="title" value="{{ title }}" placeholder="やることを入力">
+        <button type="submit">追加</button>
+    </form>
+
+    <ul class="todo-list">
+    {% for todo in todos %}
+        <li class="{{ 'done' if todo.done else '' }}">
+            <span class="title">{{ todo.title }}</span>
+            <form action="/toggle/{{ todo.id }}" method="post">
+                <button type="submit">{{ '戻す' if todo.done else '完了' }}</button>
+            </form>
+            <form action="/delete/{{ todo.id }}" method="post">
+                <button type="submit" class="delete">削除</button>
+            </form>
+        </li>
+    {% else %}
+        <li class="empty">やることはありません</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

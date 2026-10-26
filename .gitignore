@@ -5,6 +5,7 @@ venv/
 # Python のキャッシュ
 __pycache__/
 *.pyc
+.pytest_cache/
 
 # SQLite のデータベースファイル（実行すると自動で作られる）
 *.db

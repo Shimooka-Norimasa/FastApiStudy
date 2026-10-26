@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>ToDo リスト（JavaScript 版）</h1>
+
+    {# エラーメッセージの表示場所。最初は hidden で隠しておき、JavaScript が表示する #}
+    <p id="error" class="error" hidden></p>
+
+    {# action / method は書かない。送信は JavaScript が受け持つ #}
+    <form id="add-form" class="add-form">
+        <input type="text" id="title" placeholder="やることを入力" maxlength="{{ max_length }}">
+        <button type="submit">追加</button>
+    </form>
+
+    {# 一覧の入れ物。中身は JavaScript が作る #}
+    <ul id="todo-list" class="todo-list"></ul>
+
+    {# defer: HTML を最後まで読み込んでから JavaScript を実行する #}
+    <script src="{{ url_for('static', path='app.js') }}" defer></script>
+{% endblock %}
