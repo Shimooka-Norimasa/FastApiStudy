@@ -257,7 +257,18 @@ uvicorn main:app --reload
 ## 12-9. 練習問題
 
 1. `TodoRow` に `created_at: datetime` 列を追加し、追加した日時を記録しよう
-   - ヒント: `from datetime import datetime` と `created_at: datetime = Field(default_factory=datetime.now)`
+   - ヒント: SQLModel では、タイムゾーン（どの国・地域の時刻か）の情報が付いた日時を使う必要があります
+     ```python
+     from datetime import datetime, timezone
+
+     def now_utc() -> datetime:
+         return datetime.now(timezone.utc)   # 世界標準時（UTC）の今の日時
+
+     class TodoRow(SQLModel, table=True):
+         ...
+         created_at: datetime = Field(default_factory=now_utc)   # 追加するたびに now_utc() が呼ばれる
+     ```
+   - `datetime.now()` のようにタイムゾーンの情報が無い日時を入れると、保存するときにエラーになります
    - `schemas.py` の `Todo` にも `created_at: datetime` を追加すると、API の結果に含まれる
    - テストの `{"id": 1, "title": "...", "done": False}` と比べている部分は失敗するようになるので、テストも直そう（**仕様を変えたらテストも変える**）
 2. `GET /api/todos?done=false` の絞り込みを、`select(...).where(...)` で作ってみよう
@@ -270,19 +281,4 @@ uvicorn main:app --reload
 - 追加は `add` → `commit`、更新は属性を変えて `commit`、削除は `delete` → `commit`
 - テストがあれば、大きな書き換えでも動きが変わらないことをすぐ確かめられる
 
----
-
-## 応用編を終えて
-
-お疲れさまでした！ 応用編では、基本編の ToDo アプリに次のことを積み上げました。
-
-```
-第7章  入力チェック・エラー画面        … 壊れにくくする
-第8章  Depends                        … コードを整理する
-第9章  Pydantic + JSON API            … プログラムから使えるようにする
-第10章 JavaScript                     … 画面をなめらかにする
-第11章 テスト                         … 動くことを自動で確かめる
-第12章 SQLModel                       … データベース操作を Python らしくする
-```
-
-さらに学ぶなら、[付録](付録.md) の「次に学ぶとよいこと」を参考にしてください。
+➡ 次は [第13章 ワーカーで時間のかかる処理を行う](13_ワーカーで時間のかかる処理を行う.md)

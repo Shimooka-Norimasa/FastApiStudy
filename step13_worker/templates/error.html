@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}エラー {{ status_code }}{% endblock %}
+
+{% block content %}
+    <h1>エラー {{ status_code }}</h1>
+    <p class="error">{{ detail }}</p>
+    <p><a href="/">一覧に戻る</a></p>
+{% endblock %}
