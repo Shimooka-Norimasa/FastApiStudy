@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>ToDo リスト</h1>
+
+    {# 追加フォーム: POST /add に title を送る #}
+    <form action="/add" method="post" class="add-form">
+        <input type="text" name="title" placeholder="やることを入力" required>
+        <button type="submit">追加</button>
+    </form>
+
+    <ul class="todo-list">
+    {% for todo in todos %}
+        {# todo は sqlite3.Row。todo.title / todo["title"] のどちらでも値を取れる #}
+        <li class="{{ 'done' if todo.done else '' }}">
+            <span class="title">{{ todo.title }}</span>
+
+            {# ボタンごとに小さなフォームを置き、URL に id を含めて送る #}
+            <form action="/toggle/{{ todo.id }}" method="post">
+                <button type="submit">{{ '戻す' if todo.done else '完了' }}</button>
+            </form>
+            <form action="/delete/{{ todo.id }}" method="post">
+                <button type="submit" class="delete">削除</button>
+            </form>
+        </li>
+    {% else %}
+        <li class="empty">やることはありません</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

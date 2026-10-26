@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- {% block 名前 %}...{% endblock %} は子テンプレートが中身を差し替える場所 -->
+    <title>{% block title %}サンプル{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <a href="/">トップ</a> | <a href="/hello/花子">あいさつ</a>
+    </header>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+{# base.html を土台(親)にする。{# #} は Jinja2 のコメント #}
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    {# {{ 変数 }} で Python から渡された値を表示する #}
+    <h1>{{ title }}</h1>
+    <p>ようこそ、{{ user_name }} さん</p>
+
+    {# {% if %} で条件分岐 #}
+    {% if fruits %}
+        <p>果物は {{ fruits | length }} 個あります</p>
+    {% else %}
+        <p>果物はありません</p>
+    {% endif %}
+
+    {# {% for %} でくり返し #}
+    <ul>
+    {% for fruit in fruits %}
+        <li>{{ loop.index }}. {{ fruit }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

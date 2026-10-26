@@ -1,0 +1,14 @@
+# 仮想環境
+.venv/
+venv/
+
+# Python のキャッシュ
+__pycache__/
+*.pyc
+
+# SQLite のデータベースファイル（実行すると自動で作られる）
+*.db
+
+# エディタ
+.vscode/
+.idea/

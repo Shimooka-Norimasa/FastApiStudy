@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>メモ（メモリ保存版）</title>
+</head>
+<body>
+    <h1>メモ</h1>
+
+    {# action=送信先URL, method=送信方法。name="content" が Python 側の引数名になる #}
+    <form action="/add" method="post">
+        <input type="text" name="content" required>
+        <button type="submit">追加</button>
+    </form>
+
+    <ul>
+    {% for memo in memos %}
+        <li>{{ memo }}</li>
+    {% else %}
+        {# for の中身が 0 件のときは else 部分が表示される #}
+        <li>メモはまだありません</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
