@@ -1,5 +1,5 @@
 # 第1章: FastAPI を読むために必要な Python の基本
-# 実行方法（C:FastApiStudystep01_python で）:  python basics.py
+# 実行方法（C:\FastApiStudy\step01_python で）:  python basics.py
 
 # ---------------------------------------------
 # 1. 変数と型
